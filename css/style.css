@@ -1,0 +1,337 @@
+@charset "UTF-8";
+common
+*, *::before, *::after{
+    box-sizing: border-box;
+} *
+
+body{
+    font-family: 'Noto Sans JP', Meiryo, sans-serif;
+}
+main{
+        font-size: 13px;
+        font-family: "Noto Sans JP", "Hiragino Sans", Meiryo, sans-serif;
+}
+a {
+    text-decoration:none; 
+}
+a:visited {
+    color: rgb(0, 0, 0);
+}
+a:hover {
+    color: rgb(100, 100, 100);
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+/* header p{
+    background: #fff;
+    background-size: cover;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    top: 0;
+    bottom: 600px;
+    left: 0;
+    right: 0;
+} */
+.kawabayu_bg{
+    width: 100%;
+    height: 103px;
+    background-color: rgb(255, 255, 255);
+}
+.kawabayu_ttl{
+    margin: 20px auto 0px;
+    width: 200px;
+    height: 85px;
+    /* background-color: chocolate; */
+    background-image: url(/img/kawabayu_ttl.png);
+}
+header .nav-list{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100;
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+header .nav-list a{
+    position: relative;
+    top: 10px;
+    /* background-color: #bbbbbb; */
+    margin: 60px;
+}
+/* 背景のdivを作ってその上に入れる */
+ul.SNSicon{
+    width: 1200px;
+    height: 30px;
+    font-size: 14px;
+    position: absolute;
+    top: 17px;
+    margin-left: 960px;
+}
+#Instagram{
+    /* position: absolute; */
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#Twitter{
+    /* position: absolute; */
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#Line{
+    /* position: absolute; */
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.close-time{
+    font-size: 12px;
+    margin-left: 980px;
+    margin-top: -50px;
+}
+.time{
+    margin: 5px;
+}
+.close{
+    margin: 5px;
+}
+h1.header{
+    width: 1200px;
+    height: 530px;
+    background: #9d9d9d;
+    background-size: cover;
+    /* position: relative; */
+    margin: auto;
+    background-image: url(/img/Roten_sample.png);
+    background-position: 50% 10%; 
+}
+.bars{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -60px;
+}
+div.bar1{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 70px;
+    height: 6px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.6);
+}
+div.bar2{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 70px;
+    height: 6px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.6);
+
+}
+div.bar3{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 70px;
+    height: 6px;
+    background: rgb(255, 255, 255);
+
+}
+main.h1{
+    width: 508px;
+    height: 764px;
+    background: transparent;
+
+}
+p.message{
+    line-height: 60px;
+    text-align: center;
+    color: #2a2a2a;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    font-size: 20px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+p.access{
+    line-height: 60px;
+    justify-content: center;
+    color: #2a2a2a;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    font-size: 30px;
+}
+.access-title{
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.access1{
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 50px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.map{
+    margin-top: 35px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+/* --------------- */
+p.bath{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.price1{
+    margin: 0 auto;
+    width: 300px;
+    justify-content: space-between;
+    font-size: 20px;
+    display: flex;
+    border-bottom: 1px solid #777;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.price2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* --------------- */
+.btn{
+    text-align: center;
+    width: 315px;
+    height: 50px;
+    border-radius: 34.5px;
+    background: #777;
+    margin: 40px auto;
+}
+.btn p{
+    font-size: 25px;
+    color: #ffffff;
+    position: relative;
+    top: 5px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+}
+/* div.btn{
+    justify-content: center;
+} */
+.check{
+    text-align: center;
+    font-size: 15px;
+    margin-top: auto;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.fa-4x{
+    width: 250px;
+    height: 60px;
+    color: #fff;
+    /* margin: auto; */
+    position: relative;
+    top: 7px;
+    bottom: 0px;
+    left: 1px;
+    right: 1px;
+}
+p.snsTtl{
+    width: 250px;
+    height: 60px;
+    font-size: 30px;
+    color: #ffffff;
+    position: relative;
+    top: -83px;
+    bottom: 0px;
+    left: 86px;
+    right: 0px;
+}
+.twitterTimeline{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+p.instaTtl{
+    font-size: 30px;
+    color: #ffffff;
+    position: relative;
+    top: -84px;
+    bottom: 0px;
+    left: 78px;
+    right: 0px;
+}
+.instaPost{
+    margin:0 auto;
+}
+.instaPost .instagram-media{
+    margin: 0 auto 12px!important;
+}
+p.lineTtl{
+    font-size: 30px;
+    color: #ffffff;
+    position: relative;
+    top: -84px;
+    bottom: 0px;
+    left: 101px;
+    right: 0px;
+}
+/* --------------------- */
+.twitterBg{
+    margin: 0 auto;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background: #1da1f2;
+}
+.instaBg{
+    margin: 0 auto;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background: linear-gradient(#ff9121 0%, #bc00ff 45.28%, #ff006e 89.16%, #ff9121 100%);
+}
+.lineBg{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background: #03e503;
+}
+/* --------------------- */
+.nav-list-footer{
+    position: relative;
+    top: 50px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 20px;
+}
+.nav-list-footer li{
+    /* width: 150px;
+    height: 30px; */
+    font-size: 15px;
+    margin: 10px 82px;           /* 上下 左右 */
+}
+.footerBg{
+    width: 100%;
+    height: 161px;
+    background: #403f3f;
+}
+.footer a{
+    color: aqua;
+}
