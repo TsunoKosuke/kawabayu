@@ -5,18 +5,16 @@ common
 } *
 
 body{
-    font-family: 'Noto Sans JP', Meiryo, sans-serif;
+    font-family: 'Zen Kurenaido', "Noto Sans JP", "Hiragino Sans", Meiryo, sans-serif;
 }
 main{
         font-size: 13px;
-        font-family: "Noto Sans JP", "Hiragino Sans", Meiryo, sans-serif;
         background: rgb(255, 255, 255);
 }
 .centerbg{
     background: rgb(255, 255, 255);
     position: relative;
     top: 30px;
-    
     width: 90%;
     height: 100%;
     margin: 0px auto 0px auto;
@@ -51,7 +49,31 @@ ul {
 .kawabayu_bg{
     width: 100%;
     height: 103px;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+}
+.header{
+    position: relative;
+    height: 110px;
+}
+.icon{
+    position: absolute;
+    top: 0px;
+    right: 17%;
+    /* bottom: 100%;
+    left: 100%; */
+}
+.SNSicon{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.time{
+    margin: 5px;
+ 
+}
+.close-time{
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
 }
 .kawabayu_ttl{
     margin: 20px auto 0px;
@@ -61,10 +83,10 @@ ul {
     background-image: url(/img/kawabayu_ttl.png);
 }
 header .nav-list{
+    width: 66vw;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     height: 40px;
     top: 0;
     bottom: 0;
@@ -75,15 +97,13 @@ header .nav-list{
     opacity: 0.8;
 }
 header .nav-list a{
-    position: relative;
-    top: -50px;
-    margin: 60px;
+    font-weight: bold;
 /* ------------------- */
-        display: inline-block;
-        position: relative;
-        overflow: hidden;
-        color: rgb(0, 0, 0);
-        text-decoration: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 a:after {
     position: absolute;
@@ -103,14 +123,14 @@ a:after {
 /* ------------------- */
 
 /* 背景のdivを作ってその上に入れる */
-ul.SNSicon{
+/* ul.SNSicon{
     width: 1200px;
     height: 30px;
     font-size: 14px;
     position: absolute;
     top: 17px;
     margin-left: 960px;
-}
+} */
 #Instagram{
     /* position: absolute; */
     padding-right: 15px;
@@ -126,44 +146,40 @@ ul.SNSicon{
     padding-right: 15px;
     padding-left: 15px;
 }
-.close-time{
-    font-size: 12px;
-    margin-left: 980px;
-    margin-top: -50px;
-}
-.time{
-    margin: 5px;
-}
+
+
 .close{
     margin: 5px;
 }
-h1.header{
+.mainImage{
     /* width: 1200px;
     height: 600px;     */
     width: 66vw;
     height: 66vh;
-    /* background: #9d9d9d; */
+    background: #9d9d9d;
     background-size: cover;
     margin: auto;
-    /* background-image: url(/img/Roten_sample.png);
-    background-position: 50% 10%;  */
+    /* background-image: url(/img/kawabayu_slide1.png); */
+    /* background-position: 50% 10%;  */
 }
 /* slick_slideshow */
-h1.slide{
-    /* width: 1200px;
-    height: 600px; */
+.slide{
     width: 66vw;
     height: 66vh;
 }
-h1.slide1{
+.slideContents{
+    width: 100%;
+    height: 100%;
+}
+.slide1{
     background: url(/img/kawabayu_slide1.png) no-repeat center center;
     background-size: cover;
 }
-h1.slide2{
+.slide2{
     background: url(/img/kawabayu_slide2.png) no-repeat center center;
     background-size: cover;
 }
-h1.slide3{
+.slide3{
     background: url(/img/kawabayu_slide3.JPG) no-repeat center center;
     background-size: cover;
 }

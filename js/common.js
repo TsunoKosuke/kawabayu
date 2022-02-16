@@ -31,6 +31,20 @@ $(function(){
     });
  });
 
+$(function(){
+    /**
+     * スライドショー
+     */
+    $('#slideContents').slick({
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 500,
+        dots: true,
+        pauseOnHover: false,
+        paiseOnFocus: false,
+        fade: true,
+    });
+});
 // $(function () {
 //     $(window).scroll(function () {
 //         const wHeight = $(window).height();
