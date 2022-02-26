@@ -34,18 +34,21 @@ ul {
     list-style-type: none;
     padding: 0;
   }
-/* header p{
-    background: #fff;
-    background-size: cover;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-    top: 0;
-    bottom: 600px;
-    left: 0;
-    right: 0;
-} */
-
+  h1{
+      margin-bottom: 70px;
+  }
+/* pagetop */
+.page-top{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+.page-top-img{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    z-index: 400;
+}
 .kawabayu_bg{
     width: 100%;
     height: 103px;
@@ -54,6 +57,7 @@ ul {
 .header{
     position: relative;
     height: 110px;
+    margin: 30px;
 }
 .icon{
     position: absolute;
@@ -67,24 +71,25 @@ ul {
     margin-bottom: 0;
 }
 .time{
-    margin: 5px;
+    margin: 8px;
  
 }
 .close-time{
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
     font-weight: bold;
 }
 .kawabayu_ttl{
     margin: 20px auto 0px;
-    width: 200px;
-    height: 85px;
+    width: 250px;
+    height: 105px;
+    background-size: cover;
     /* background-color: chocolate; */
     background-image: url(/img/kawabayu_ttl.png);
 }
 header .nav-list{
     width: 66vw;
-    font-size: 14px;
+    font-size: 25px;
     display: flex;
     justify-content: space-between;
     height: 40px;
@@ -105,13 +110,14 @@ header .nav-list a{
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
+/* -------ホバー下線アニメーション------- */
 a:after {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     transform: translate(-100%, 0);
     transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
     content: "";
@@ -120,17 +126,8 @@ a:after {
   a:hover:after {
     transform: translate(0, 0);
   }
-/* ------------------- */
+/* -------ホバー下線アニメーション------- */
 
-/* 背景のdivを作ってその上に入れる */
-/* ul.SNSicon{
-    width: 1200px;
-    height: 30px;
-    font-size: 14px;
-    position: absolute;
-    top: 17px;
-    margin-left: 960px;
-} */
 #Instagram{
     /* position: absolute; */
     padding-right: 15px;
@@ -146,8 +143,30 @@ a:after {
     padding-right: 15px;
     padding-left: 15px;
 }
-
-
+.kawabarinu:hover{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-image: url(/img/kawabarinu2.jpg);
+    /* opacity: 0;
+    transition: opacity 1s;  */
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}
+.kawabarinu{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-image: url(/img/kawabarinu1.jpg);
+}
+.mascot{
+    text-align: center;
+    font-size: 20px;
+}
 .close{
     margin: 5px;
 }
@@ -221,12 +240,12 @@ main.h1{
 
 }
 p.message{
-    line-height: 60px;
+    line-height: 75px;
     text-align: center;
     color: #2a2a2a;
-    margin-top: -15px;
+    margin-top: 15px;
     margin-bottom: 45px;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Zen Kurenaido', sans-serif;
 }
 
@@ -238,20 +257,54 @@ p.access{
     margin-bottom: 120px;
     font-size: 30px;
 }
-.access-title{
-    margin-top: 40px;
-    font-size: 30px;
-    text-align: center;
-    line-height: 30px;
-    font-family: 'Zen Kurenaido', sans-serif;
-}
 .access1{
-    font-size: 20px;
     text-align: center;
+    font-size: 25px;
     line-height: 30px;
     margin-top: 50px;
     font-family: 'Zen Kurenaido', sans-serif;
 }
+.access2{
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    /* ---------------------- */
+    position: relative;
+    width: 30vw;
+    background: #e1ffe8;
+    box-shadow: 0px 0px 0px 5px #e1ffe8;
+    border: dashed 2px rgb(109, 109, 109);
+    padding: 0.2em 0.5em;
+    color: #454545;
+    margin: 64px auto;
+}
+.access2:after{
+    position: absolute;
+    content: '';
+    right: -7px;
+    top: -7px;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: #e1ffe8 #fff #e1ffe8;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.access-title{
+    margin-top: -40px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.kawabayu-bath{
+    margin-top: 60px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
 .map{
     margin-top: 35px;
     margin-bottom: 70px;
@@ -259,30 +312,63 @@ p.access{
     font-family: 'Zen Kurenaido', sans-serif;
 }
 .bathttl{
-    font-size: 30px;
     text-align: center;
-    line-height: 40px;
-    margin-top: 50px;
+    margin-top: 0px;
+    margin-bottom: -30px;
+}
+.babul{
+    background: url(../img/babul_black.png) no-repeat left center,
+    url(../img/babul_black_R.png) no-repeat right center;
+    background-size: 13%;
+    padding: 10px 80px;
+    display:inline-block;
+    /* ----------------- */
+    font-size: 35px;
+    line-height: 40px; 
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.bathttl_shirayu{
+    text-align: center;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: -30px;
+}
+.babul_shirayu{
+    background: url(../img/babul_black.png) no-repeat left center,
+    url(../img/babul_black_R.png) no-repeat right center;
+    background-size: 22%;
+    padding: 14px 80px;
+    display:inline-block;
+    /* ----------------- */
+    font-size: 40px;
+    line-height: 40px; 
     font-family: 'Zen Kurenaido', sans-serif;
 }
 .bathtips{
-    font-size: 30px;
+    background: url(../img/babul_white.png) no-repeat left center,
+    url(../img/babul_white_R.png) no-repeat right center;
+    background-size: 20%;
+    padding: 0 115px;
+    display:inline-block;
+    /* ----------------- */
+    font-size: 40px;
     text-align: center;
-    line-height: 40px;
-    margin-top: 10px;
+    line-height: 60px;
+    margin-top: 5px;
     font-family: 'Zen Kurenaido', sans-serif;
 }
 .aboutWater{
-    width: 60%;
-    height: 380px;
+    width: 40vw;
+    padding: 64px 0;
     /* width: 600px;
     height: 300px; */
     margin: 0px auto 70px auto;
     background: transparent;
     border: 2px solid #707070;
     background-image: url(/img/water.png);
-    background-position: left 60% bottom 40%;
-    background-size: 100% auto;
+    background-size: cover;
+    /* background-position: left 60% bottom 40%;
+    background-size: 100% auto; */
     /* background: rgb(255, 255, 255); */
     /* opacity: 30%; */
     text-align: center;
@@ -291,12 +377,13 @@ p.access{
     margin: 5px 10px;
     line-height: 40px;
     font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 25px;
     /* z-index: 50; */
 }
 /* --------------- */
 p.bath{
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
     font-family: 'Zen Kurenaido', sans-serif;
@@ -309,8 +396,8 @@ p.bath{
 }
 .bathbg1{
     background-color: #bc00ff;
-    width: 600px;
-    height: 300px;
+    width: 830px;
+    height: 441px;
     margin: 0px auto 0px auto;
     background-image: url(/img/tansansen.png);
     background-position: right 50% bottom 70%;
@@ -318,8 +405,8 @@ p.bath{
 }
 .bathbg2{
     background-color: #00ff88;
-    width: 600px;
-    height: 300px;
+    width: 830px;
+    height: 441px;
     margin: 0px auto 0px auto;
     background-image: url(/img/Roten_sample.png);
     background-position: right 40% bottom 10%;
@@ -327,19 +414,21 @@ p.bath{
 }
 .bathbg3{
     background-color: #0400ff;
-    width: 600px;
-    height: 300px;
+    width: 830px;
+    height: 441px;
     margin: 0px auto 0px auto;
     background-image: url(/img/shirayu.png);
     background-position: right 100% bottom 0%;
     background-size: 120% auto;
 }
+
 p.bath-explain{
     text-align: center;
     width: 600px;
     height: auto;
     margin: 0px auto 80px auto;
-    font-size: 20px;
+    font-size: 25px;
+    line-height: 45px;
     font-family: 'Zen Kurenaido', sans-serif;
 }
 .boxflex{
@@ -348,8 +437,8 @@ p.bath-explain{
     justify-content: center;
 }
 .bathbox1{
-    width: 185px;
-    height: 185px;
+    width: 250px;
+    height: 250px;
     margin: 5px;
     background-image: url(/img/okama.png);
     /* background-position: 50% 10%; */
@@ -358,8 +447,8 @@ p.bath-explain{
     background-size: 135% auto;
 }
 .bathbox2{
-    width: 185px;
-    height: 185px;
+    width: 250px;
+    height: 250px;
     margin: 5px;
     background-image: url(/img/okama_chain.png);
     /* background-position: 50% 10%; */
@@ -368,8 +457,8 @@ p.bath-explain{
     background-size: 135% auto;
 }
 .bathbox3{
-    width: 185px;
-    height: 185px;
+    width: 250px;
+    height: 250px;
     margin: 5px;
     background-image: url(/img/Weight_scale.png);
     /* background-position: 50% 10%; */
@@ -379,16 +468,16 @@ p.bath-explain{
 }
 .clickto{
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     margin-top: -40px;
     margin-bottom: 20px;
     font-family: 'Zen Kurenaido', sans-serif;
 }
 .price1{
     margin: 0 auto;
-    width: 300px;
+    width: 370px;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     border-bottom: 1px solid #777;
     font-family: 'Zen Kurenaido', sans-serif;
@@ -424,9 +513,8 @@ h4{
 } */
 .check{
     text-align: center;
-    font-size: 15px;
-    margin-top: auto;
-    margin-bottom: 30px;
+    font-size: 25px;
+    margin: 25px auto;
     font-family: 'Zen Kurenaido', sans-serif;
 }
 .fa-4x{
@@ -450,14 +538,15 @@ h4{
     margin: 30px;
     width: 32%;
     background-color: rgb(221, 221, 221);
+    border-radius: 30px;
 }
 p.snsTtl{
     width: 250px;
     height: 60px;
-    font-size: 30px;
+    font-size: 33px;
     color: #ffffff;
     position: relative;
-    top: -83px;
+    top: -92px;
     bottom: 0px;
     left: 86px;
     right: 0px;
@@ -502,14 +591,14 @@ p.blogTtl{
 }
 /* --------------------- */
 .twitterBg{
-    margin: 10px auto;
+    margin: 24px auto;
     width: 250px;
     height: 60px;
     border-radius: 10px;
     background: #1da1f2;
 }
 .instaBg{
-    margin: 10px auto;
+    margin: 24px auto;
     width: 250px;
     height: 60px;
     border-radius: 10px;
@@ -550,13 +639,12 @@ p.blogTtl{
 .nav-list-footer li{
     /* width: 150px; */
     height: 30px;
-    font-size: 15px;
     margin: 10px 10px;           /* 上下 左右 */
 }
 .nav-list-footer a{
-    position: relative;
-    top: auto;
-    margin: 70px 70px;
+    /* position: relative; */
+    margin: 20px 40px;
+    font-size: 25px;
 /* ------------------- */
         display: inline-block;
         position: relative;
