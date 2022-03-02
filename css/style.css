@@ -21,14 +21,11 @@ main{
     /* margin: auto 0; */
 }
 /* .fade-in{
-    /* アニメーション */
-    /* animation-name: fade;
-    animation-duration: 1s;
-    animation-delay: 0;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    display: block;
 } */
+.fade-out{
+    display: none;
+}
 a {
     text-decoration:none; 
 }
@@ -48,8 +45,8 @@ ul {
 /* pageTop */
 .page-top{
     position: fixed;
-    right: 40px;
-    bottom: 40px;
+    right: 90px;
+    bottom: 120px;
     /* opacity: 50;
     pointer-events: none; */
 }
@@ -57,10 +54,11 @@ ul {
     pointer-events: visible;
 } */
 .page-top-img{
+    /* opacity: 0; */
     width: 50px;
     height: 50px;
     background-color: red;
-    z-index: 400;
+    z-index: 200;
 }
 .kawabayu_bg{
     width: 100%;
@@ -646,7 +644,7 @@ p.blogTtl{
     width: 100%;
     height: 0px;
     margin: auto;
-    z-index: 100;
+    z-index: 00;
     background-color: #ffffff;
     opacity: 0.8;
 }
@@ -669,9 +667,9 @@ p.blogTtl{
 .footerBg{
     margin-top: 40px;
     width: 100%;
-    height: 160px;
+    height: 100px;
     background: #403f3f;
-    z-index: 20;
+    z-index: 400;
 }
 .footer a{
     color: aqua;

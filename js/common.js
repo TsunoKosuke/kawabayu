@@ -14,22 +14,22 @@ function openBlog(){
     window.open("http://kawabayu.asablo.jp/blog/")
 }
 
-// $(function(){
-//     // #で始まるアンカーをクリックした場合に処理
-//     $('#').click(function() {
-//        // スクロールの速度
-//        var speed = 350; // ミリ秒
-//        // アンカーの値取得
-//        var href= $(this).attr("href");
-//        // 移動先を取得
-//        var target = $(href == "#" || href == "" ? 'html' : href);
-//        // 移動先を数値で取得
-//        var position = target.offset().top;
-//        // スムーススクロール
-//        $('body,html').animate({scrollTop:position}, speed, 'swing');
-//        return false;
-//     });
-//  });
+$(function(){
+    // #で始まるアンカーをクリックした場合に処理
+    $('a[href*="#"]').click(function() {
+       // スクロールの速度
+       var speed = 350; // ミリ秒
+       // アンカーの値取得
+       var href= $(this).attr("href");
+       // 移動先を取得
+       var target = $(href == "#" || href == "" ? 'html' : href);
+       // 移動先を数値で取得
+       var position = target.offset().top;
+       // スムーススクロール
+       $('body,html').animate({scrollTop:position}, speed, 'swing');
+       return false;
+    });
+ });
 
 $(function(){
 
@@ -52,7 +52,7 @@ $(function(){
     //         addClassFlag = false;
     //     }
     // });
-    
+
     /**
      * スライドショー
      */
@@ -60,30 +60,30 @@ $(function(){
         autoplay: true,
         autoplaySpeed: 4000,
         speed: 500,
-        dots: true,
+        dots: false,
         pauseOnHover: false,
         paiseOnFocus: false,
         fade: true,
     });
-        /**
-     * スライドショー
-     */
-     $('#slideContents').slick({
-        // 自動再生
-        autoplay: true,
-        // 再生スピード
-        autoplaySpeed: 2000, // ミリ秒
-        // ページ遷移のスピード
-        speed: 500,
-        // ページ送りの表示
-        dots: true,
-        // マウスホバー時にスライドを止めない
-        pauseOnHover: false,
-        // ドット選択時にスライドを止めない
-        pauseOnFocus: false,
-        // フェード
-        fade: true,
-    });
+    //     /**
+    //  * スライドショー ←いらないけど一応残しておいている
+    //  */
+    //  $('#slideContents').slick({
+    //     // 自動再生
+    //     autoplay: true,
+    //     // 再生スピード
+    //     autoplaySpeed: 2000, // ミリ秒
+    //     // ページ遷移のスピード
+    //     speed: 500,
+    //     // ページ送りの表示
+    //     dots: true,
+    //     // マウスホバー時にスライドを止めない
+    //     pauseOnHover: false,
+    //     // ドット選択時にスライドを止めない
+    //     pauseOnFocus: false,
+    //     // フェード
+    //     fade: true,
+    // });
     /**
      * ページトップ
      */
@@ -97,15 +97,18 @@ $(function(){
         // return false;
     });
 });
-// $(function () {
-//     $(window).scroll(function () {
-//         const wHeight = $(window).height();
-//         const scrollAmount = $(window).scrollTop();
-//         $('.scrollanime').each(function () {
-//             const targetPosition = $(this).offset().top;
-//             if(scrollAmount > targetPosition - wHeight + 60) {
-//                 $(this).addClass("fadeInDown");
-//             }
-//         });
-//     });
-// });
+
+$(function () {
+    $(window).scroll(function () {
+        const wHeight = $(window).height();
+        const scrollAmount = $(window).scrollTop();
+        $('.page-top-img').each(function () {
+            if(scrollAmount >  wHeight) {
+                $(this).fadeIn();
+            }else{
+                $(this).fadeOut();
+            }
+
+        });
+    });
+});
