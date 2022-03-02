@@ -19,8 +19,16 @@ main{
     height: 100%;
     margin: 0px auto 0px auto;
     /* margin: auto 0; */
-
 }
+/* .fade-in{
+    /* アニメーション */
+    /* animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+} */
 a {
     text-decoration:none; 
 }
@@ -37,15 +45,20 @@ ul {
   h1{
       margin-bottom: 70px;
   }
-/* pagetop */
+/* pageTop */
 .page-top{
     position: fixed;
     right: 40px;
     bottom: 40px;
+    /* opacity: 50;
+    pointer-events: none; */
 }
+/* .page-top.fade-in{
+    pointer-events: visible;
+} */
 .page-top-img{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: red;
     z-index: 400;
 }
@@ -88,8 +101,8 @@ ul {
     background-image: url(/img/kawabayu_ttl.png);
 }
 header .nav-list{
-    width: 66vw;
-    font-size: 25px;
+    width: 80vw;
+    font-size: 23px;
     display: flex;
     justify-content: space-between;
     height: 40px;
@@ -103,6 +116,7 @@ header .nav-list{
 }
 header .nav-list a{
     font-weight: bold;
+    padding: 0 20px;
 /* ------------------- */
     display: inline-block;
     position: relative;
@@ -111,7 +125,7 @@ header .nav-list a{
     text-decoration: none;
 }
 /* -------ホバー下線アニメーション------- */
-a:after {
+/* a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -125,7 +139,7 @@ a:after {
   
   a:hover:after {
     transform: translate(0, 0);
-  }
+  } */
 /* -------ホバー下線アニメーション------- */
 
 #Instagram{
@@ -173,7 +187,7 @@ a:after {
 .mainImage{
     /* width: 1200px;
     height: 600px;     */
-    width: 66vw;
+    width: 80vw;
     height: 66vh;
     background: #9d9d9d;
     background-size: cover;
@@ -183,7 +197,7 @@ a:after {
 }
 /* slick_slideshow */
 .slide{
-    width: 66vw;
+    width: 80vw;
     height: 66vh;
 }
 .slideContents{
@@ -440,31 +454,31 @@ p.bath-explain{
     width: 250px;
     height: 250px;
     margin: 5px;
-    background-image: url(/img/okama.png);
+    background-image: url(../img/okama.png);
     /* background-position: 50% 10%; */
     background-color: #bc00ff;
-    background-position: right 100% bottom 0%;
-    background-size: 135% auto;
+    /* background-position: right 100% bottom 0%; */
+    background-size: cover;
 }
 .bathbox2{
     width: 250px;
     height: 250px;
     margin: 5px;
-    background-image: url(/img/okama_chain.png);
+    background-image: url(../img/okama_chain.png);
     /* background-position: 50% 10%; */
     background-color: #0084ff;
     background-position: right 30% bottom 30%;
-    background-size: 135% auto;
+    background-size: cover;
 }
 .bathbox3{
     width: 250px;
     height: 250px;
     margin: 5px;
-    background-image: url(/img/Weight_scale.png);
+    background-image: url(../img/Weight_scale.png);
     /* background-position: 50% 10%; */
     background-color: #ffae00;
-    background-position: right 78% bottom 0%;
-    background-size: 135% auto;
+    /* background-position: right 78% bottom 0%; */
+    background-size: cover;
 }
 .clickto{
     text-align: center;
@@ -661,4 +675,664 @@ p.blogTtl{
 }
 .footer a{
     color: aqua;
+}
+.responsive_1{
+    opacity: 0;
+}
+.responsive_2{
+    opacity: 0;
+}
+.responsive_2-1{
+    display:none
+}
+.responsive_2-2{
+    display:none
+}
+.responsive_3
+{
+    display:none
+}
+.responsive_4
+{
+    display:none
+}
+.responsive_5
+{
+    display:none
+}
+.responsive_6
+{
+    display:none
+}
+.responsive_7
+{
+    display:none
+}
+.responsive_8
+{
+    display:none
+}
+.responsive_9
+{
+    display:none
+}
+.responsive_10
+{
+    display:none
+}
+/* -----------------レスポンシブ対応------------------ */
+@media(max-width: 1234px){
+
+    .kawabayu_ttl {
+        margin: 20px auto 0px;
+        width: 290px;
+        height: 122px;
+        background-size: cover;
+        no-repeat center center;
+        background-size: cover;
+        /* background-color: chocolate; */
+        background-image: url(/img/kawabayu_ttl.png);
+    }
+
+.responsive_1{
+    opacity: 100;
+    position: relative;
+    top: -15px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    }
+    /* top */
+.icon{
+    opacity: 0;
+    pointer-events: none;
+}
+header .nav-list{
+    opacity: 0;
+    pointer-events: none;
+}
+.mainImage{
+    /* width: 1200px;
+    height: 600px;     */
+    width: 100vw;
+    height: 30vh;
+    background: #9d9d9d;
+    background-size: cover;
+    margin: auto;
+    /* background-image: url(/img/kawabayu_slide1.png); */
+    /* background-position: 50% 10%;  */
+}
+/* slick_slideshow */
+
+.slide{
+    width: 100vw;
+    height: 30vh;
+}
+.slideContents{
+    width: 100%;
+    height: 100%;
+}
+.slide1{
+    background: url(/img/kawabayu_slide1.png) no-repeat center center;
+    background-size: cover;
+}
+.slide2{
+    background: url(/img/kawabayu_slide2.png) no-repeat center center;
+    background-size: cover;
+}
+.slide3{
+    background: url(/img/kawabayu_slide3.JPG) no-repeat center center;
+    background-size: cover;
+}
+/* --------------------- */
+.bathbg1 {
+    background-color: rgb(188, 0, 255);
+    width: 70vw;
+    height: 30vh;
+    margin: 0px auto;
+    background-image: url(/img/tansansen.png);
+    background-position: right 50% bottom 70%;
+    background-size: 100%;
+    no-repeat center center;
+    background-size: cover;
+}
+.bathbg2 {
+    background-color: rgb(188, 0, 255);
+    width: 70vw;
+    height: 30vh;
+    margin: 0px auto;
+    background-image: url(/img/Roten_sample.png);
+    background-position: right 50% bottom 70%;
+    background-size: 100%;
+    no-repeat center center;
+    background-size: cover;
+}
+.bathbg3 {
+    background-color: rgb(188, 0, 255);
+    width: 70vw;
+    height: 30vh;
+    margin: 0px auto;
+    background-image: url(/img/shirayu.png);
+    background-position: right 50% bottom 70%;
+    background-size: 100%;
+    no-repeat center center;
+    background-size: cover;
+}
+
+.aboutWater {
+    width: 70vw;
+    padding: 64px 0;
+    margin: 0px auto 70px auto;
+    background: transparent;
+    border: 2px solid #707070;
+    background-image: url(/img/water.png);
+    background-size: cover;
+    /* background: rgb(255, 255, 255); */
+    /* opacity: 30%; */
+    text-align: center;
+}
+
+.SNSblock {
+    margin: 20px 30px;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 30px;
+}
+
+.access2 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    position: relative;
+    width: 42vw;
+    background: #e1ffe8;
+    box-shadow: 0px 0px 0px 5px #e1ffe8;
+    border: dashed 2px rgb(109, 109, 109);
+    padding: 0.2em 5.5em;
+    color: #454545;
+    margin: 64px auto;
+}
+.footerBg
+{
+    opacity: 0;
+}
+.responsive_2{
+    width: 100%;
+    height: 110px;
+    opacity: 100;
+    background-color: #454545;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    justify-content: space-around;
+}
+.responsive_2-1{
+    display: block;
+    display: flex;
+}
+.responsive_2-1 p{
+margin: 0 40px;
+}
+.responsive_2 a{
+color: #ffffff;
+}
+.responsive_2-2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0 10px;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    opacity: 0.8;
+}
+.responsive_2-2 li{
+    font-size: 30px;
+}
+.responsive_2-2 a{
+    text-align: center;
+    font-size: 20px;
+}
+.link-icon{
+    display: block;
+    margin-bottom: 4px;
+}
+.responsive-icon1{
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    background-image: url(../img/clock-.png);
+    background-size: cover;
+
+}
+.responsive-icon2{
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    background-image: url(../img/spring.png);
+    background-size: cover;
+}
+.responsive-icon3{
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    background-image: url(../img/ten.png);
+    background-size: cover;
+}
+.responsive-icon4{
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    background-image: url(../img/question.png);
+    background-size: cover;
+}
+.responsive-icon5{
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    background-image: url(../img/SNS.png);
+    background-size: cover;
+}
+@media(max-width: 600px){
+
+.kawabayu_ttl{
+        margin: 20px auto 0px;
+        width: 190px;
+        height: 80px;
+        background-size: cover;
+        no-repeat center center;
+        background-size: cover;
+        /* background-color: chocolate; */
+        background-image: url(../img/kawabayu_ttl.png);
+}
+
+.responsive_1{
+    opacity: 100;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+/* massege */
+.message{
+    display:none
+}
+.responsive_3
+{
+    display:block;
+    opacity: 1;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+}
+.kawabarinu:hover{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-image: url(/img/kawabarinu2.jpg);
+    /* opacity: 0;
+    transition: opacity 1s;  */
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}
+.kawabarinu{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-image: url(/img/kawabarinu1.jpg);
+}
+.mascot
+{
+    text-align: center;
+    font-size: 14px;
+}
+.access-title {
+    margin-top: -40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.access1 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 50px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.access2 {
+    display: none;
+}
+.responsive_4{
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    background: #e1ffe8;
+    box-shadow: 0px 0px 0px 5px #e1ffe8;
+    border: dashed 2px rgb(109, 109, 109);
+    padding: 0.2em 3em;
+    color: #454545;
+    margin: 64px auto;
+}
+.map {
+    display: none;
+}
+.responsive_5{
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+p.bath{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.price1 {
+    margin: 0 auto;
+    width: 300px;
+    justify-content: space-between;
+    font-size: 20px;
+    display: flex;
+    border-bottom: 1px solid #777;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.kawabayu-bath {
+    margin-top: 60px;
+    font-size: 35px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+p.bath-explain {
+    text-align: center;
+    width: 300px;
+    height: auto;
+    margin: 0px auto 10px auto;
+    font-size: 18px;
+    line-height: 36px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.aboutWater {
+    width: 80vw;
+    padding: 40px 0;
+    margin: 20px auto 20px auto;
+    background: transparent;
+    border: 2px solid #707070;
+    background-image: url(/img/water.png);
+    background-size: cover;
+    text-align: center;
+}
+.bathtips {
+    display: none;
+}
+.Water-explain {
+    display: none;
+}
+.babul {
+    background: url(../img/babul_black.png) no-repeat left center, url(../img/babul_black_R.png) no-repeat right center;
+    background-size: 13%;
+    padding: 10px 41px;
+    display: inline-block;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.responsive_6
+{
+    display: block;
+}
+.responsive_7
+{
+    display: block;
+    background: url(../img/babul_white.png) no-repeat left center,
+    url(../img/babul_white_R.png) no-repeat right center;
+    background-size: 20%;
+    padding: 0 90px;
+    display:inline-block;
+    /* ----------------- */
+    font-size: 35px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 5px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.responsive_8
+{
+    display: block;
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.clickto {
+    display: none;
+    text-align: center;
+    font-size: 18px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.check {
+    text-align: center;
+    font-size: 18px;
+    margin: 25px auto;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.SNSblock {
+    display: none;
+    /* margin: 20px 30px;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 30px; */
+}
+.responsive_9
+{
+    display:block;
+    text-align: center;
+    font-size: 18px;
+}
+.responsive_10{
+    display: block;
+}
+p.bath {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.instaBg {
+    margin-top: -5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background: linear-gradient(#ff9121 0%, #bc00ff 45.28%, #ff006e 89.16%, #ff9121 100%);
+}
+.lineBg {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background: #03e503;
+}
+.blogBg {
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 190px;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background: #85baee;
+}
+.icon{
+    opacity: 0;
+    pointer-events: none;
+}
+header .nav-list{
+    display: none;
+    pointer-events: none;
+}
+.mainImage{
+    /* width: 1200px;
+    height: 600px;     */
+    width: 100vw;
+    height: 20vh;
+    background: #9d9d9d;
+    /* background-size: cover; */
+    margin: auto;
+    /* background-image: url(/img/kawabayu_slide1.png); */
+    /* background-position: 50% 10%;  */
+}
+/* slick_slideshow */
+
+.slide{
+    width: 100vw;
+    height: 20vh;
+}
+.slideContents{
+    width: 100%;
+    height: 100%;
+}
+.slide1{
+    background: url(/img/kawabayu_slide1.png) no-repeat center center;
+    background-size: cover;
+}
+.slide2{
+    background: url(/img/kawabayu_slide2.png) no-repeat center center;
+    background-size: cover;
+}
+.slide3{
+    background: url(/img/kawabayu_slide3.JPG) no-repeat center center;
+    background-size: cover;
+}
+/* --------------------- */
+.bathbg1 {
+    background-color: rgb(188, 0, 255);
+    width: 80vw;
+    height: 20vh;
+    margin: 0px auto;
+    background-image: url(/img/tansansen.png);
+    background-position: right 50% bottom 70%;
+    background-size: 100%;
+    no-repeat center center;
+    background-size: cover;
+}
+.bathbg2 {
+    background-color: rgb(188, 0, 255);
+    width: 80vw;
+    height: 20vh;
+    margin: 0px auto;
+    background-image: url(/img/Roten_sample.png);
+    background-position: right 50% bottom 70%;
+    background-size: 100%;
+    no-repeat center center;
+    background-size: cover;
+}
+.bathbg3 {
+    background-color: rgb(188, 0, 255);
+    width: 80vw;
+    height: 20vh;
+    margin: 0px auto;
+    background-image: url(/img/shirayu.png);
+    background-position: right 50% bottom 70%;
+    background-size: 100%;
+    no-repeat center center;
+    background-size: cover;
+}
+.boxflex {
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+}
+.bathbox1 {
+    width: 250px;
+    height: 205px;
+    padding: 5px;
+    background-image: url(../img/okama.png);
+    /* background-position: 50% 10%; */
+    background-color: #bc00ff;
+    /* background-position: right 100% bottom 0%; */
+    background-size: cover;
+}
+.bathbox2 {
+    display: none;
+}
+.bathbox3 {
+    display: none;
+    width: 250px;
+    height: 205px;
+    padding: 5px;
+    background-image: url(../img/Weight_scale.png);
+    /* background-position: 50% 10%; */
+    background-color: #ffae00;
+    /* background-position: right 78% bottom 0%; */
+    background-size: cover;
+}
+.SNSblock {
+    margin: 20px 30px;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 30px;
+}
+
+.access2 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    position: relative;
+    width: 42vw;
+    background: #e1ffe8;
+    box-shadow: 0px 0px 0px 5px #e1ffe8;
+    border: dashed 2px rgb(109, 109, 109);
+    padding: 0.2em 5.5em;
+    color: #454545;
+    margin: 64px auto;
+}
+.footerBg
+{
+    display: none;
+.responsive_2{
+    width: 100%;
+    height: 110px;
+    opacity: 100;
+    background-color: #454545;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+}
+.responsive_2-1{
+    display: block;
+}
+.responsive_2 a{
+color: #0400ff;
+}
+
 }
