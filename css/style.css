@@ -421,7 +421,7 @@ p.bath{
     height: 441px;
     margin: 0px auto 0px auto;
     background-image: url(../img/Roten_sample.png);
-    background-position: right 40% bottom 10%;
+    background-position: right 40% bottom 51%;
     background-size: 100% auto;
 }
 .bathbg3{
@@ -430,7 +430,7 @@ p.bath{
     height: 441px;
     margin: 0px auto 0px auto;
     background-image: url(../img/shirayu.png);
-    background-position: right 100% bottom 0%;
+    background-position: right 100% bottom 41%;
     background-size: 120% auto;
 }
 
@@ -685,6 +685,7 @@ p.blogTtl{
     height: 100px;
     background: #403f3f;
     z-index: 400;
+    bottom: 0;
 }
 .footer a{
     color: aqua;
